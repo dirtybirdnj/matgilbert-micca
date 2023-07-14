@@ -1,0 +1,1 @@
+export const categories = ["blog","mind","idea","dream","inspirational","modern","life lessons","goals"]
