@@ -14,7 +14,7 @@ const nextConfig = {
 		defaultLocale: 'en',
 	},
 	images: {
-		domains: ["ik.imagekit.io"],
+		domains: ["ik.imagekit.io","res.cloudinary.com"],
 		deviceSizes: [450, 600, 750, 828, 1080, 1200],
 	},
 }

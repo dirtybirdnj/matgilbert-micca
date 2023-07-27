@@ -1,6 +1,7 @@
+/* eslint-disable import/no-anonymous-default-export */
 export default {
 	title: "matgilbert.com - creative engineering mixed with outdoors and cooking. Nerd things, fish things, art things.",
-	description: "A blog created with Next.js and Tailwind.css",
+	description: "A blog for the random thoughts, ideas and creativity that comes out of Mat Gilbert. All the stuff that's fit to post and some other stuff that maybe shouldn't be public. Send it.",
 	name: "matgilbert.com",
 	socials: {
 		github: "https://github.com/dirtybirdnj",
