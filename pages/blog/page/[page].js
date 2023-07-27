@@ -20,9 +20,9 @@ export function getStaticProps({params}){
 	const allPosts = getAllPosts()
 	const crntPage = parseInt(params!= undefined && params.page != undefined? params.page : 1)
 	const paginationProps = calcPaginationProps({crntPage, numOfPosts: allPosts.length})
-	
+
 	const posts = allPosts.slice(paginationProps.startIndex, paginationProps.endIndex)
-	
+
 	return {
 		props: {
 			posts,
@@ -33,10 +33,10 @@ export function getStaticProps({params}){
 
 const Page = ({posts, paginationProps}) => {
 	return <>
-		<SEO pageName={`All Posts - Page ${paginationProps.crntPage}`} />
+		<SEO pageName={`Blog - ${paginationProps.crntPage}`} />
 		<MainContainer>
 			<PageTitle
-				title="all posts"
+				title="Blog"
 				description="Commodo ea nisi enim aute veniam reprehenderit cillum laborum aliquip sit eiusmod occaecat laborum fugiat mollit."
 			/>
 			<PostCardList posts={posts} />
