@@ -13,7 +13,7 @@ const Footer = ({authorName, categories, className}) => {
 			<FooterCol className="lg:col-span-2"><AboutUsWidget /></FooterCol>
 			<FooterCol className="lg:col-span-2" title="categories"><CategoriesWidget categories={categories} /></FooterCol>
 			<FooterCol title="links"><LinksWidget /></FooterCol>
-			<FooterCol title="follow us"><SocialMediaIcons {...siteMetadata.socials} /></FooterCol>
+			<FooterCol title="social"><SocialMediaIcons {...siteMetadata.socials} /></FooterCol>
 		</div>
 		<div className="py-6 text-sm text-center uppercase tracking-wide">
 			© 2023 {authorName}. Made in Vermont. <Link href="https://www.vtapi.co">vtapi.co</Link>
