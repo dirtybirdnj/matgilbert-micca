@@ -3,50 +3,58 @@ title: 'Photos'
 date: '2023-7-27'
 ---
 
-<Figure src="https://ik.imagekit.io/nextjs23/micca/andrey-k-FoDtZddTt0k-unsplash.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1671204106440" alt="an image with the same width as the container" caption="100% of the container" />
+{/*
+//This is how i want to do it but it won't work
+import { galleryPhotos } from '../../public/indexGallery.js'
 
-<Figure src="https://ik.imagekit.io/nextjs23/micca/bogdan-shcheglovitov-KPZ2lnqEpYg-unsplash.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1671203822008" alt="an image that is wider than the container" caption="Wider than the container" size="wide" />
+<Gallery photos={galleryPhotos}>
 
-<Figure src="https://ik.imagekit.io/nextjs23/micca/cheng-feng-Tu_lH5CFFZw-unsplash.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1671204096583" alt="an image with full screen width" caption="Full Screen width" size="full" />
+*/}
 
-## Links
-This is a link to [Google](https://www.google.com/)
-
-
-
-## Blockquotes
-
-> Praesent ullamcorper tellus nec tincidunt volutpat. Vivamus tempor egestas justo eu lobortis. Etiam malesuada eleifend urna vel pretium. Etiam eu lorem vulputate, egestas ante pharetra, facilisis lectus. Integer tortor lectus, lacinia non vulputate ut, dignissim a felis.
-
-
-## Responsive Table
-<div className="responsive-table">
-|#| Heading		| Heading		| Heading		| Heading		| Heading		| Heading		|
-|-| ----------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-|1| Cell		| Cell			| Cell			| Cell			| Cell			| Cell			|
-|2| Cell		| Cell			| Cell			| Cell			| Cell			| Cell			|
-|3| Cell		| Cell			| Cell			| Cell			| Cell			| Cell			|
-</div>
-
-## Syntax Highlighting
-```js
-const getMDXFilesPaths = (dir = "data/posts") => {
-	const dirPath = path.join(process.cwd(), dir)
-	const filePaths = []
-
-	const dirContent = fs.readdirSync(dirPath)
-	for(let i = 0; i < dirContent.length; i++){
-		if(/\.mdx?$/i.test(dirContent[i])){
-			filePaths.push(path.join(dirPath, dirContent[i]))
-		}
-	}
-
-	return filePaths
-}
-```
-
-
-## Responsive embedded video
-<div className="responsive-16-9-iframe">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/U3ASj1L6_sY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-</div>
+<Gallery photos={[{
+    src: 'https://res.cloudinary.com/vtapico/image/upload/v1683916994/verticaltubejig.com/gallery_masonry/VideoCapture_20220615-150040_jkulmy.jpg',
+    srcSet: [
+      'https://res.cloudinary.com/vtapico/image/upload//w_500,c_scale/v1672160676/verticaltubejig.com/gallery_masonry/VideoCapture_20220615-150040_jkulmy.jpg 500w',
+      'https://res.cloudinary.com/vtapico/image/upload//w_800,c_scale/v1672160676/verticaltubejig.com/gallery_masonry/VideoCapture_20220615-150040_jkulmy.jpg 800w',
+      'https://res.cloudinary.com/vtapico/image/upload//w_1024,c_scale/v1672160676/verticaltubejig.com/gallery_masonry/VideoCapture_20220615-150040_jkulmy.jpg 1024w',
+      'https://res.cloudinary.com/vtapico/image/upload//w_1600,c_scale/v1672160676/verticaltubejig.com/gallery_masonry/VideoCapture_20220615-150040_jkulmy.jpg 1600w'
+    ],
+    width: 1920,
+    height: 864
+  }
+  ,
+  {
+    src: 'https://res.cloudinary.com/vtapico/image/upload/v1683916984/verticaltubejig.com/gallery_masonry/VideoCapture_20220212-145628_xnasic.jpg',
+    srcSet: [
+      'https://res.cloudinary.com/vtapico/image/upload//w_500,c_scale/v1672160676/verticaltubejig.com/gallery_masonry/VideoCapture_20220212-145628_xnasic.jpg 500w',
+      'https://res.cloudinary.com/vtapico/image/upload//w_800,c_scale/v1672160676/verticaltubejig.com/gallery_masonry/VideoCapture_20220212-145628_xnasic.jpg 800w',
+      'https://res.cloudinary.com/vtapico/image/upload//w_1024,c_scale/v1672160676/verticaltubejig.com/gallery_masonry/VideoCapture_20220212-145628_xnasic.jpg 1024w',
+      'https://res.cloudinary.com/vtapico/image/upload//w_1600,c_scale/v1672160676/verticaltubejig.com/gallery_masonry/VideoCapture_20220212-145628_xnasic.jpg 1600w'
+    ],
+    width: 864,
+    height: 1382
+  }
+  ,
+  {
+    src: 'https://res.cloudinary.com/vtapico/image/upload/v1683917003/verticaltubejig.com/gallery_masonry/Screenshot_20221223_212251_Photos_tbzddy.jpg',
+    srcSet: [
+      'https://res.cloudinary.com/vtapico/image/upload//w_500,c_scale/v1672160676/verticaltubejig.com/gallery_masonry/Screenshot_20221223_212251_Photos_tbzddy.jpg 500w',
+      'https://res.cloudinary.com/vtapico/image/upload//w_800,c_scale/v1672160676/verticaltubejig.com/gallery_masonry/Screenshot_20221223_212251_Photos_tbzddy.jpg 800w',
+      'https://res.cloudinary.com/vtapico/image/upload//w_1024,c_scale/v1672160676/verticaltubejig.com/gallery_masonry/Screenshot_20221223_212251_Photos_tbzddy.jpg 1024w',
+      'https://res.cloudinary.com/vtapico/image/upload//w_1600,c_scale/v1672160676/verticaltubejig.com/gallery_masonry/Screenshot_20221223_212251_Photos_tbzddy.jpg 1600w'
+    ],
+    width: 2400,
+    height: 1080
+  }
+  ,
+  {
+    src: 'https://res.cloudinary.com/vtapico/image/upload/v1683916992/verticaltubejig.com/gallery_masonry/PXL_20220612_000430890_ihjcp2.jpg',
+    srcSet: [
+      'https://res.cloudinary.com/vtapico/image/upload//w_500,c_scale/v1672160676/verticaltubejig.com/gallery_masonry/PXL_20220612_000430890_ihjcp2.jpg 500w',
+      'https://res.cloudinary.com/vtapico/image/upload//w_800,c_scale/v1672160676/verticaltubejig.com/gallery_masonry/PXL_20220612_000430890_ihjcp2.jpg 800w',
+      'https://res.cloudinary.com/vtapico/image/upload//w_1024,c_scale/v1672160676/verticaltubejig.com/gallery_masonry/PXL_20220612_000430890_ihjcp2.jpg 1024w',
+      'https://res.cloudinary.com/vtapico/image/upload//w_1600,c_scale/v1672160676/verticaltubejig.com/gallery_masonry/PXL_20220612_000430890_ihjcp2.jpg 1600w'
+    ],
+    width: 4080,
+    height: 3072
+  }]} />
