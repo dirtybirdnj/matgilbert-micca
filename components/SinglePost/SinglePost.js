@@ -13,7 +13,6 @@ const SinglePost = ({MDXSource, frontMatter, content, relatedPosts}) => {
 			<MDXBody className="mt-16" MDXSource={MDXSource} />
 			<PostTags className="mt-16" tags={frontMatter.tags} />
 			<ShareButtons className="mt-16" title={frontMatter.title} href={frontMatter.href} />
-			<Disqus className="mt-28" frontMatter={frontMatter} key={frontMatter.title} />
 		</div>
 		<RelatedPosts className="mt-20" relatedPosts={relatedPosts} />
 	</MainContainer>

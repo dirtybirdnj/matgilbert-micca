@@ -12,7 +12,7 @@ const PostCard = ({post}) => {
 			<Link href={href}>{title}</Link>
 		</h2>
 		<p className="mt-4">{summary}</p>
-		<PostAuthors className="mt-6" authorsData={authorsData} />
+
 	</div>
 }
 

@@ -5,6 +5,8 @@ import SocialMediaIcons from "@/components/SocialMediaIcons/SocialMediaIcons"
 import siteMetadata from "@/data/siteMetadata"
 import AboutUsWidget from "./AboutUsWidget"
 import LinksWidget from "./LinksWidget"
+import Link from 'next/link'
+
 const Footer = ({authorName, categories, className}) => {
 	return <MainContainer className={className}>
 		<div className="grid sm:grid-cols-2 lg:grid-cols-6 gap-12 pt-20 border-t border-gray-100 dark:border-gray-900 pb-24">
@@ -14,7 +16,7 @@ const Footer = ({authorName, categories, className}) => {
 			<FooterCol title="follow us"><SocialMediaIcons {...siteMetadata.socials} /></FooterCol>
 		</div>
 		<div className="py-6 text-sm text-center uppercase tracking-wide">
-			© 2022 {authorName}. All rights reserved.
+			© 2023 {authorName}. Made in Vermont. <Link href="https://www.vtapi.co">vtapi.co</Link>
 		</div>
 	</MainContainer>
 }

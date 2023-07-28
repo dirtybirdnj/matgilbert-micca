@@ -6,7 +6,7 @@ import NewsletterSection from "@/components/NewsletterSection/NewsletterSection"
 const Layout = ({children}) => {
 	return (
 		<>
-			<Header className="mb-20" navLinks={headerNavLinks} />
+			<Header className="" navLinks={headerNavLinks} />
 			{children}
 			<Footer className="mt-28" authorName={siteMetadata.name} />
 		</>

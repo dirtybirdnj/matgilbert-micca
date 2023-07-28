@@ -34,11 +34,7 @@ export function getStaticProps({params}){
 const Page = ({posts, paginationProps}) => {
 	return <>
 		<SEO pageName={`Blog - ${paginationProps.crntPage}`} />
-		<MainContainer>
-			<PageTitle
-				title="Blog"
-				description="Commodo ea nisi enim aute veniam reprehenderit cillum laborum aliquip sit eiusmod occaecat laborum fugiat mollit."
-			/>
+		<MainContainer className="mt-28">
 			<PostCardList posts={posts} />
 			<Pagination {...paginationProps} />
 		</MainContainer>
