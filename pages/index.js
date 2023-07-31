@@ -35,8 +35,8 @@ export default function Home({posts, paginationProps, featuredPosts}) {
 			<MainContainer>
 			<Figure src="https://res.cloudinary.com/vtapico/image/upload/v1690505449/matgilbert.com/20230621_203138_ldyi8w.jpg"
 			alt="A pink orange and blue sunset showing the adirondack mountains over Lake Champlain. Slight ripples in the water show a streaky vertical reflection of the sun." size="full" />
-			
-				<SectionTitle className="mt-32"/>
+
+				<SectionTitle className="mt-8"/>
 				<PostCardList posts={posts} />
 				<Pagination {...paginationProps} />
 			</MainContainer>
