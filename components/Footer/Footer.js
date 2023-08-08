@@ -16,7 +16,7 @@ const Footer = ({authorName, categories, className}) => {
 			<FooterCol title="social"><SocialMediaIcons {...siteMetadata.socials} /></FooterCol>
 		</div>
 		<div className="py-6 text-sm text-center uppercase tracking-wide">
-			© 2023 {authorName}. Made in Vermont. <Link href="https://www.vtapi.co" target="_blank">vtapi.co</Link>
+			© 2023 {authorName} • Made in Vermont • <Link href="https://www.vtapi.co" target="_blank">vtapi.co</Link>
 		</div>
 	</MainContainer>
 }
